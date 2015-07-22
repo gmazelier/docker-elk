@@ -1,0 +1,8 @@
+elasticsearch:
+  ports:
+    - "9200:9200"
+    - "9300:9300"
+logstash:
+  ports:
+    - "55444:55444"
+    - "55444:55444/udp"
