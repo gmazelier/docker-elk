@@ -1,0 +1,8 @@
+cluster:
+  name:elasticsearch
+node:
+  name: ${HOSTNAME}
+path:
+  logs: /var/log/elasticsearch
+  data: /var/data/elasticsearch
+  work: /tmp/elasticsearch
