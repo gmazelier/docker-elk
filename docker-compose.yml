@@ -1,0 +1,12 @@
+elasticsearch:
+  extends:
+    file: docker-compose-base.yml
+    service: elasticsearch
+  image: dockerelk_elasticsearch:latest
+logstash:
+  extends:
+    file: docker-compose-base.yml
+    service: logstash
+  image: dockerelk_logstash:latest
+  links:
+    - elasticsearch:elasticsearch
