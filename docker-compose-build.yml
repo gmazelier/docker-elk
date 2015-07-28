@@ -10,3 +10,10 @@ logstash:
   build: logstash
   links:
     - elasticsearch:elasticsearch
+kibana:
+  extends:
+    file: docker-compose-base.yml
+    service: kibana
+  build: kibana
+  links:
+    - elasticsearch:elasticsearch

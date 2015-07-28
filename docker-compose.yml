@@ -10,3 +10,10 @@ logstash:
   image: dockerelk_logstash:latest
   links:
     - elasticsearch:elasticsearch
+kibana:
+  extends:
+    file: docker-compose-base.yml
+    service: kibana
+  image: dockerelk_kibana:latest
+  links:
+    - elasticsearch:elasticsearch

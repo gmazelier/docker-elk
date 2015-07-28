@@ -6,3 +6,6 @@ logstash:
   ports:
     - "55444:55444"
     - "55444:55444/udp"
+kibana:
+  ports:
+    - "80:80"
